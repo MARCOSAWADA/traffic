@@ -1,4 +1,4 @@
-/* styles.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #3e8e41;
+    background-color: black;
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #3e8e41;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 15px 0;

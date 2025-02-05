@@ -14,19 +14,17 @@
         <h1>PAINEL DE CONTROLE</h1>
         <nav>
             <ul>
-                <li><a href="index.php?action=cadastrar_voo">Cadastrar Voo</a></li>
-                <li><a href="index.php?action=listar_voos">Listar Voos</a></li>
-                <li><a href="index.php?action=cadastrar_aeronave">Cadastrar Aeronave</a></li>
-                <li><a href="index.php?action=listar_aeronaves">Listar Aeronaves</a></li>
-                <li><a href="index.php?action=cadastrar_piloto">Cadastrar Piloto</a></li>
-                <li><a href="index.php?action=listar_pilotos">Listar Pilotos</a></li>
+            <li><a href="index.php?action=cadastrar_voo">Cadastrar Voo</a></li>
+            <li><a href="index.php?action=cadastrar_aeronave">Cadastrar Aeronave</a></li>
+            <li><a href="index.php?action=cadastrar_piloto">Cadastrar Piloto</a></li>
+            <li><a href="index.php?action=cadastrar_aeroporto">Cadastrar Aeroporto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="content">
-            <h2>Bem-vindo ao Sistema de Tráfego Aéreo!</h2>
+            <h2>Sistema de Tráfego Aéreo!</h2>
             <p>Selecione uma ação no menu para começar.</p>
 
             <div class="card">
@@ -45,6 +43,12 @@
                 <h3>Pilotos</h3>
                 <p>Gerencie os pilotos e associe-os aos voos programados.</p>
                 <a href="index.php?action=listar_pilotos">Ver Pilotos</a>
+            </div>
+
+            <div class="card">
+                <h3>Aeroportos</h3>
+                <p>Gerencie os aeroportos e associe-os aos voos programados.</p>
+                <a href="index.php?action=listar_aeroportos">Ver Aeroportos</a>
             </div>
         </div>
     </main>
