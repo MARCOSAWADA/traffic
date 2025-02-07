@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/_PrOjEtOs/traffic/App/db/Database.php';
-// require_once $_SERVER['DOCUMENT_ROOT'] . '/_PROJETOS/trafego-aereo/App/db/Database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/traffic/App/db/Database.php';
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/_PROJETOS/traffic/App/db/Database.php';
 
 class Piloto {
     private $conn;
