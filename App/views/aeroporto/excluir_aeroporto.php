@@ -1,35 +1,53 @@
 <?php
 require_once '../../models/Aeroporto.php';
 
+
 if (isset($_GET['id'])) {
     $id_aeroporto = $_GET['id'];
-    $aeroporto = new Aeroporto($id_aeroporto);
+    $aeroporto = new Aeroporto($id_aeroporto); 
 } else {
     echo "Aeroporto não encontrado.";
     exit;
 }
 
-$status = isset($_GET['status']) ? $_GET['status'] : '';
+
+$status = isset($_GET['status']) ? $_GET['status'] : '';  
 ?>
 
-<h2>Excluir Aeroporto</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Aeroporto</title>
+    <link rel="stylesheet" href="../../../public/css/views.css">
+    
+</head>
+<body>
 
-<p>Tem certeza que deseja excluir o aeroporto <strong><?php echo $aeroporto->getNome(); ?></strong>?</p>
+    <div class="container">
+        <h2>Excluir Aeroporto</h2>
 
-<form action="../../controller/Aeroporto_controller.php" method="post">
-    <input type="hidden" name="id" value="<?php echo $aeroporto->getId(); ?>">
-    <button type="submit" name="action" value="excluir">Excluir Aeroporto</button>
-</form>
+        <p>Tem certeza que deseja excluir o aeroporto <strong><?php echo $aeroporto->getNome(); ?></strong>?</p>
 
-<p><a href="listar_aeroportos.php">Cancelar</a></p>
+        <form action="../../controller/Aeroporto_controller.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $aeroporto->getId(); ?>">
+            <button type="submit" name="action" value="excluir">Excluir Aeroporto</button>
+        </form>
 
-<!-- Mensagens de status -->
-<?php if ($status == 'sucesso'): ?>
-    <script>
-        alert('Aeroporto excluído com sucesso!');
-    </script>
-<?php elseif ($status == 'erro'): ?>
-    <script>
-        alert('Erro ao excluir aeroporto. Tente novamente.');
-    </script>
-<?php endif; ?>
+        <p><a href="listar_aeroportos.php">Cancelar</a></p>
+
+
+        <?php if ($status == 'sucesso'): ?>
+            <div class="status-message success">
+                <p>Aeroporto excluído com sucesso!</p>
+            </div>
+        <?php elseif ($status == 'erro'): ?>
+            <div class="status-message error">
+                <p>Erro ao excluir aeroporto. Tente novamente.</p>
+            </div>
+        <?php endif; ?>
+    </div>
+
+</body>
+</html>

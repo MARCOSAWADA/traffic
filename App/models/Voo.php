@@ -1,5 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/PrOjEtO/traffic/App/db/Database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/_PrOjEtOs/traffic/App/db/Database.php';
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/_PROJETOS/trafego-aereo/App/db/Database.php';
 
 class Voo {
     private $conn;
@@ -84,6 +85,16 @@ class Voo {
         $stmt->bindParam(':id', $this->id);
 
         return $stmt->execute();
+    }
+
+    
+    public function deletar() {
+        // Deleta o voo baseado no ID
+        $sql = "DELETE FROM voo WHERE id = :id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(':id', $this->id);
+
+        return $stmt->execute(); // Retorna true se a operação for bem-sucedida
     }
 
 

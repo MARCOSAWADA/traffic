@@ -1,5 +1,5 @@
 <?php
-// Incluindo os modelos necessários
+
 require_once '../../models/Aeronave.php';
 require_once '../../models/Aeroporto.php';
 require_once '../../models/Piloto.php';

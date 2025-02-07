@@ -4,7 +4,7 @@ require_once '../models/Aeroporto.php';
 
 class AeroportoController {
     public function __construct() {
-        // Verifica a ação enviada pelo formulário
+
         if (isset($_POST['action'])) {
             $action = $_POST['action'];
             

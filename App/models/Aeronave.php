@@ -1,6 +1,6 @@
 <?php
-// Caminho absoluto para o Database.php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/PrOjEtO/traffic/App/db/Database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/_PrOjEtOs/traffic/App/db/Database.php';
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/_PROJETOS/trafego-aereo/App/db/Database.php';
 
 
 class Aeronave {

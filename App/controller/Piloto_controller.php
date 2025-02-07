@@ -4,7 +4,7 @@ require_once '../models/Piloto.php';
 
 class PilotoController {
     public function __construct() {
-        // Certifique-se de que o form está passando a ação
+
         if (isset($_POST['action'])) {
             $action = $_POST['action'];
             

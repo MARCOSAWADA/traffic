@@ -21,7 +21,7 @@ CREATE TABLE aeronave(
 	id int auto_increment primary key,
     modelo varchar(100) not null,
     capacidade int not null,
-    status enum('em voo', 'em solo', 'manutenção') not null
+    status enum('em voo', 'em solo', 'em manutenção') not null
     );
 
 CREATE TABLE aeroporto(
@@ -78,13 +78,13 @@ INSERT INTO aeroporto (nome, codigo, localizacao) VALUES ('Aeroporto de Campinas
 
 INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Boeing 737', 150, 'em voo');
 INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Airbus A320', 180, 'em manutenção');
-INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Embraer 190', 100, 'em voo');
+INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Embraer 190', 100, 'em solo');
 INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Boeing 787', 250, 'em voo');
 INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Airbus A350', 300, 'em manutenção');
-INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Boeing 767', 220, 'em voo');
+INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Boeing 767', 220, 'em solo');
 INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Airbus A321', 200, 'em voo');
 INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Embraer 175', 80, 'em manutenção');
-INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Boeing 747', 400, 'em voo');
+INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Boeing 747', 400, 'em solo');
 INSERT INTO aeronave (modelo, capacidade, status) VALUES ('Airbus A330', 250, 'em voo');
 
 

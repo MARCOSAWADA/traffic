@@ -4,7 +4,7 @@ require_once '../models/Aeronave.php';
 
 class AeronaveController {
     public function __construct() {
-        // Verifica qual ação está sendo chamada (cadastrar, editar, excluir)
+
         if (isset($_POST['action'])) {
             $action = $_POST['action'];
             
@@ -68,6 +68,5 @@ class AeronaveController {
     }
 }
 
-// Cria uma instância do controlador para processar as ações
 new AeronaveController();
 ?>
